@@ -1,0 +1,216 @@
+﻿@model Team
+
+
+@{
+    switch (Model.TeamID)
+    {
+        case 1:
+            <body class="container" style="background-color:black" >
+                <h3 style="color:white">@Model.TeamName Information</h3>
+                <img src="/img/nets.jpg" alt="Nets Logo" />
+            </body>
+            break;
+        case 3:
+            <body class=" container" style="background-color: rgb(225,68,52)">
+                <h3 style="color:white">@Model.TeamName Information</h3>
+                <img src="/img/hawks.png" alt="Hawks Logo" />
+            </body>
+            break;
+
+        case 4:
+            <body class="container" style="background-color:rgb(0,122,51)">
+                <h3 style="color: rgb(139,111,78)">@Model.TeamName Information</h3>
+                <img src="/img/celtics.png" alt="Celtics Logo" />
+            </body>
+            break;
+        case 5:
+            <body class="container" style="background-color:rgb(29,1,96)">
+                <h3 style="color: rgb(0,120,140)">@Model.TeamName Information</h3>
+                <img src="/img/hornets.png" alt="Hornets Logo" />
+            </body>
+            break;
+        case 6:
+            <body style="background-color:black">
+                <h3 style="color:rgb(206, 17, 65)">@Model.TeamName Information</h3>
+                <img src="/img/bulls.png" alt="Bulls Logo" />
+            </body>
+            break;
+        case 7:
+            <body class="container" style="background-color:rgb(4,30,66)">
+                <h3 style="color: rgb(134,0,56)">@Model.TeamName Information</h3>
+                <img src="/img/cavaliers.png" alt="Cav's Logo" />
+            </body>
+            break;
+        case 8:
+            <body class="container" style="background-color:rgb(0,83,188)">
+                <h3 style="color:rgb(0,43,92)">@Model.TeamName Information</h3>
+                <img src="/img/mavericks.png" alt="Mavericks Logo" />
+            </body>
+            break;
+        case 9:
+            <body class="container" style="background-color: rgb(13,34,64)">
+                <h3 style=" color: rgb(255,198,39)">@Model.TeamName Information</h3>
+                <img src="/img/nuggets.jpg" alt="Nuggets Logo" />
+            </body>
+            break;
+
+        case 10:
+            <body class="container" style="background-color:rgb(200,16,46)">
+                <h3 style="color:rgb(29,66,138)">@Model.TeamName Information</h3>
+                <img src="/img/pistons.png" alt="Pistons Logo" />
+            </body>
+            break;
+        case 11:
+            <body class="container" style="background-color:rgb(29,66,138)">
+                <h3 style="color:rgb(255,199,44)">@Model.TeamName Information</h3>
+                <img src="/img/warriors.png" alt="Warriors Logo" />
+            </body>
+            break;
+        case 12:
+            <body class="container" style="background-color:rgb(206,17,65)">
+                <h3 style="color:rgb(196,206,211)">@Model.TeamName Information</h3>
+                <img src="/img/rockets.png" alt="Rockets Logo" />
+            </body>
+            break;
+        case 13:
+            <body class="container" style="background-color: rgb(0,45,98)">
+                <h3 style="color: rgb(253,187,48)">@Model.TeamName Information</h3>
+                <img src="/img/pacers.png" alt="Pacers Logo" />
+            </body>
+            break;
+        case 14:
+            <body class="container" style=" background-color: rgb(200,16,46)">
+                <h3 style="color: rgb(29,66,148)">@Model.TeamName Information</h3>
+                <img src="/img/clippers.png" alt="Clippers Logo" />
+            </body>
+            break;
+        case 15:
+            <body class="container" style="background-color: rgb(85,37,130)">
+                <h3 style="color: rgb(253,185,39)">@Model.TeamName Information</h3>
+                <img src="/img/lakers.png" alt="Lakers Logo" />
+            </body>
+            break;
+        case 16:
+            <body class="container" style="background-color: rgb(93,118,169)">
+                <h3 style="color: rgb(18,23,63)">@Model.TeamName Information</h3>
+                <img src="/img/grizzlies.jpg" alt="Grizzlies Logo" />
+            </body>
+            break;
+        case 17:
+            <body class="container" style="background-color: rgb(152,0,46)">
+                <h3 style="color: rgb(249,160,27)">@Model.TeamName Information</h3>
+                <img src="/img/heat.png" alt="Heat Logo" />
+            </body>
+            break;
+        case 18:
+            <body class="container" style="        background-color: rgb(0,71,27)">
+                <h3 style="        color: rgb(240,235,210)">@Model.TeamName Information</h3>
+                <img src="/img/bucks.jpg" alt="Bucks Logo" />
+            </body>
+            break;
+        case 19:
+            <body class="container" style="        background-color: rgb(12,35,64)">
+                <h3 style="        color: rgb(35,97,146)">@Model.TeamName Information</h3>
+                <img src="/img/timberwolves.png" alt="Timberwolves Logo" />
+            </body>
+            break;
+        case 20:
+            <body class="container" style="        background-color: rgb(0,22,65)">
+                <h3 style="        color: rgb(225,58,62)">@Model.TeamName Information</h3>
+                <img src="/img/pelicans.png" alt="Pelicans Logo" />
+            </body>
+            break;
+        case 21:
+            <body class="container" style="        background-color: rgb(0,107,182)">
+                <h3 style="        color: rgb(245,132,38)">@Model.TeamName Information</h3>
+                <img src="/img/knicks.png" alt="Knicks Logo" />
+            </body>
+            break;
+        case 22:
+            <body class="container" style="        background-color: rgb(0,125,195)">
+                <h3 style="        color: rgb(0,45,98)">@Model.TeamName Information</h3>
+                <img src="/img/thunder.png" alt="Thunder Logo" />
+            </body>
+            break;
+        case 23:
+            <body class="container" style="        background-color: rgb(0,125,197)">
+                <h3 style="        color: rgb(196,206,211)">@Model.TeamName Information</h3>
+                <img src="/img/magic.png" alt="Magic Logo" />
+            </body>
+            break;
+        case 24:
+            <body class="container" style="        background-color: rgb(0,107,182)">
+                <h3 style="        color: rgb(237,23,76)">@Model.TeamName Information</h3>
+                <img src="/img/76ers.png" alt="76ers Logo" />
+            </body>
+            break;
+        case 25:
+            <body class="container" style="        background-color: rgb(29,17,96)">
+                <h3 style="        color: rgb(229,95,32)">@Model.TeamName Information</h3>
+                <img src="/img/suns.png" alt="Suns Logo" />
+            </body>
+            break;
+        case 26:
+            <body class="container" style="        background-color: rgb(224,58,62)">
+                <h3 style="        color: rgb(6,25,34)">@Model.TeamName Information</h3>
+                <img src="/img/trailblazers.png" alt="Trailblazers Logo" />
+            </body>
+            break;
+        case 27:
+            <body class="container" style="        background-color: rgb(91,43,130)">
+                <h3 style=" color: rgb(99,113,122)">@Model.TeamName Information</h3>
+                <img src="/img/kings.png" alt="Kings Logo" />
+            </body>
+            break;
+        case 28:
+            <body class="container" style="        background-color: rgb(196,206,211)">
+                <h3 style="color: rgb(6,25,34)">@Model.TeamName Information</h3>
+                <img src="/img/spurs.png" alt="Spurs Logo" />
+            </body>
+            break;
+        case 29:
+            <body class="container" style="        background-color: rgb(206,17,65)">
+                <h3 style="color: rgb(6,25,34)">@Model.TeamName Information</h3>
+                <img src="/img/raptors.png" alt="Raptors Logo" />
+            </body>
+            break;
+        case 30:
+            <body class="container" style="        background-color: rgb(0,43,92)">
+                <h3 style="color: rgb(249,160,2)">@Model.TeamName Information</h3>
+                <img src="/img/jazz.png" alt="Jazz Logo" />
+            </body>
+            break;
+        case 31:
+            <body class="container" style="        background-color: rgb(0,43,92)">
+                <h3 style="color: rgb(227,24,55)">@Model.TeamName Information</h3>
+                <img src="/img/wizards.png" alt="Wizards Logo" />
+            </body>
+            break;
+        default:
+            <img src="" alt="image not found" />
+            break;
+    }
+}
+<table class="table ">
+    <tr>
+
+        <th style="color:white">  Conference</th>
+        <th style="color:white">  Division</th>
+        <th style="color:white"> Abbreviation</th>
+        <th style="color:white"> Record</th>
+    </tr>
+
+    <tr>
+        <td style="color:white">@Model.Conference</td>
+        <td style="color:white">@Model.Division</td>
+        <td style="color:white">@Model.Abbreviation</td>
+        <td style="color:white">@Model.Record</td>
+    </tr>
+</table>
+
+
+
+
+
+
+

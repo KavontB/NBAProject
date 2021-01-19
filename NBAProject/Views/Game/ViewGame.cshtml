@@ -1,0 +1,235 @@
+﻿@model Game
+<h3 class="col-md-8">@Model.visitor_team.full_name at @Model.home_team.full_name</h3>
+
+<div class="container">
+    <div class="row">
+        @{
+            switch (Model.home_team.full_name)
+            {
+                case "Brooklyn Nets":
+                    <img src="/img/nets.jpg" alt="Nets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Atlanta Hawks":
+                    <img src="/img/hawks.png" alt="Hawks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Boston Celtics":
+                    <img src="/img/celtics.png" alt="Celtics Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Charlotte Hornets":
+                    <img src="/img/hornets.png" alt="Hornets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Chicago Bulls":
+                    <img src="/img/bulls.png" alt="Bulls Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Cleveland Cavaliers":
+                    <img src="/img/cavaliers.png" alt="Cav's Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Dallas Mavericks":
+                    <img src="/img/mavericks.png" alt="Mavericks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Denver Nuggets":
+                    <img src="/img/nuggets.jpg" alt="Nuggets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Detroit Pistons":
+                    <img src="/img/pistons.png" alt="Pistons Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Golden State Warriors":
+                    <img src="/img/warriors.png" alt="Warriors Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Houston Rockets":
+                    <img src="/img/rockets.png" alt="Rockets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Indiana Pacers":
+                    <img src="/img/pacers.png" alt="Pacers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "LA Clippers":
+                    <img src="/img/clippers.png" alt="Clippers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Los Angeles Lakers":
+                    <img src="/img/lakers.png" alt="Lakers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Memphis Grizzlies":
+                    <img src="/img/grizzlies.jpg" alt="Grizzlies Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Miami Heat":
+                    <img src="/img/heat.png" alt="Heat Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Milwaukee Bucks":
+                    <img src="/img/bucks.jpg" alt="Bucks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Minnesota Timberwolves":
+                    <img src="/img/timberwolves.png" alt="Timberwolves Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "New Orleans Pelicans":
+                    <img src="/img/pelicans.png" alt="Pelicans Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "New York Knicks":
+                    <img src="/img/knicks.png" alt="Knicks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Oklahoma City Thunder":
+                    <img src="/img/thunder.png" alt="Thunder Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Orlando Magic":
+                    <img src="/img/magic.png" alt="Magic Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Philadelphia 76ers":
+                    <img src="/img/76ers.png" alt="76ers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Phoenix Suns":
+                    <img src="/img/suns.png" alt="Suns Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Portland Trail Blazers":
+                    <img src="/img/trailblazers.png" alt="Trailblazers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Sacramento Kings":
+                    <img src="/img/kings.png" alt="Kings Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "San Antonio Spurs":
+                    <img src="/img/spurs.png" alt="Spurs Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Toronto Raptors":
+                    <img src="/img/raptors.png" alt="Raptors Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Utah Jazz":
+                    <img src="/img/jazz.png" alt="Jazz Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Washington Wizards":
+                    <img src="/img/wizards.png" alt="Wizards Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                default:
+                    <img src="" alt="image not found" />
+                    break;
+            }
+        }
+        @{
+            switch (Model.visitor_team.full_name)
+            {
+                case "Brooklyn Nets":
+                    <img src="/img/nets.jpg" alt="Nets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Atlanta Hawks":
+                    <img src="/img/hawks.png" alt="Hawks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Boston Celtics":
+                    <img src="/img/celtics.png" alt="Celtics Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Charlotte Hornets":
+                    <img src="/img/hornets.png" alt="Hornets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Chicago Bulls":
+                    <img src="/img/bulls.png" alt="Bulls Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Cleveland Cavaliers":
+                    <img src="/img/cavaliers.png" alt="Cav's Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Dallas Mavericks":
+                    <img src="/img/mavericks.png" alt="Mavericks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Denver Nuggets":
+                    <img src="/img/nuggets.jpg" alt="Nuggets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Detroit Pistons":
+                    <img src="/img/pistons.png" alt="Pistons Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Golden State Warriors":
+                    <img src="/img/warriors.png" alt="Warriors Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Houston Rockets":
+                    <img src="/img/rockets.png" alt="Rockets Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Indiana Pacers":
+                    <img src="/img/pacers.png" alt="Pacers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "LA Clippers":
+                    <img src="/img/clippers.png" alt="Clippers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Los Angeles Lakers":
+                    <img src="/img/lakers.png" alt="Lakers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Memphis Grizzlies":
+                    <img src="/img/grizzlies.jpg" alt="Grizzlies Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Miami Heat":
+                    <img src="/img/heat.png" alt="Heat Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Milwaukee Bucks":
+                    <img src="/img/bucks.jpg" alt="Bucks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Minnesota Timberwolves":
+                    <img src="/img/timberwolves.png" alt="Timberwolves Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "New Orleans Pelicans":
+                    <img src="/img/pelicans.png" alt="Pelicans Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "New York Knicks":
+                    <img src="/img/knicks.png" alt="Knicks Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Oklahoma City Thunder":
+                    <img src="/img/thunder.png" alt="Thunder Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Orlando Magic":
+                    <img src="/img/magic.png" alt="Magic Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Philadelphia 76ers":
+                    <img src="/img/76ers.png" alt="76ers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Phoenix Suns":
+                    <img src="/img/suns.png" alt="Suns Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Portland Trail Blazers":
+                    <img src="/img/trailblazers.png" alt="Trailblazers Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Sacramento Kings":
+                    <img src="/img/kings.png" alt="Kings Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "San Antonio Spurs":
+                    <img src="/img/spurs.png" alt="Spurs Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Toronto Raptors":
+                    <img src="/img/raptors.png" alt="Raptors Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Utah Jazz":
+                    <img src="/img/jazz.png" alt="Jazz Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                case "Washington Wizards":
+                    <img src="/img/wizards.png" alt="Wizards Logo" class="col-md-6" width="300" height="300" />
+                    break;
+                default:
+                    <img src="" alt="image not found" />
+                    break;
+            }
+        }
+       
+        <div class="col-md-6">
+            <h4>@Model.home_team.full_name</h4>
+        </div>
+        <div class="col-md-6">
+            <h4> @Model.visitor_team.full_name</h4>
+        </div>
+        <div class="col-md-6">
+            <h4>@Model.home_team_score</h4>
+        </div>
+        <div class="col-md-6">
+            <h4> @Model.visitor_team_score</h4>
+       </div>
+        <table border="1" width="100%">
+            <thead class=" table table-dark">
+                <tr>
+                    <th>Season</th>
+                    <th>PostSeason</th>
+                    <th>Date</th>
+                </tr>
+            </thead>
+            <thead class="table table-light table-hover">
+                <tr>
+                    <td>@Model.season</td>
+                    <td>@Model.postseason</td>
+                    <td>@Model.date.ToString("M-d-yyyy")</td>
+
+                </tr>
+            </thead>
+        </table>
+        <i class="navbar-toggler-icon"></i>
+    </div>
+
+</div>

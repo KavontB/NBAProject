@@ -1,0 +1,36 @@
+﻿@model GameList
+    <div class="container">
+        <h2>Games</h2>
+
+
+
+        <table class="table table-bordered table-responsive table-hover border=1 frame=hsides rules=rows">
+            <tr>
+                <td>Game</td>
+                <th>Home</th>
+                <th colspan="2" scope="colgroup">Score</th>
+                <th>Away</th>
+                <th>Season</th>
+
+            </tr>
+
+            @foreach (var game in Model.data)
+            {
+                
+        <tr>
+            <td><a href=/Game/ViewGame/@game.id>@game.id</a></td>
+            
+            <td>@game.home_team.full_name</td>
+            <td>@game.home_team_score</td>
+            <td>@game.visitor_team_score</td>
+            <td>@game.visitor_team.full_name</td>
+            <td>@game.season</td>
+            
+            
+
+        </tr>
+
+            }
+        </table>
+
+    </div>
