@@ -32,7 +32,7 @@ namespace NBAProject
                 conn.Open();
                 return conn;
             });
-            services.AddTransient<IGameRepository, GameRepository>();
+            
             services.AddTransient<ITeamRepository, TeamRepository>();
 
 

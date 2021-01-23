@@ -10,13 +10,7 @@ namespace NBAProject.Controllers
 {
     public class GameController : Controller
     {
-        private readonly IGameRepository repo;
         
-
-        public GameController(IGameRepository repo)
-        {
-            this.repo = repo;
-        }
 
         // GET: /<controller>/
         public IActionResult GameIndex()
